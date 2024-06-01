@@ -1,0 +1,709 @@
+
+:root {
+    --primarycolor: #fff;
+    --secandaycolor: #385f96;
+    --taltcolor: #dcf4f8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    justify-content: space-between;
+    padding: 0 2rem;
+ }
+
+/*header start*/
+
+header {
+    background-color: #fff;
+    height: 100vh;
+}
+
+header .navbar {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 10px 10px #00000010;
+    z-index: 1;
+}
+
+header .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    padding: 1.5rem 2rem;   
+}
+
+header .navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar nav ul a {
+    margin: 0 15px;
+    color: var(--secandaycolor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#home #logo {
+    color: var(--secandaycolor);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/*header content*/
+
+.header-content .container img {
+    width: 48rem;
+    transition: 0.4s;
+}
+
+.header-content .container img:hover {
+    transform: scale(1.08);
+}
+
+.header-content .container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    padding: 10rem 2rem 5rem;
+    height: 100%;
+    
+}
+
+.header-content .content-text h1 {
+    color: var(--secandaycolor);
+    font-size: 70px;
+    padding-bottom: 20px;
+
+
+}
+
+.header-content .content-text p {
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: rgb(70, 70, 70);
+    
+}
+
+.header-content .container .social {
+    margin: 1rem 0 2rem;
+}
+
+.header-content .container .social a i {
+    font-size: 18px;
+    padding: 10px;
+    background-color: gray;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.header-content .container .social a i:hover {
+    transform: scale(0.85);
+    background-color: var(--secandaycolor);
+} 
+
+.header-content .content-text .btn {
+    padding: 15px 20px;
+    background-color: var(--secandaycolor);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.header-content .content-text .btn:hover {
+    background-color: transparent;
+    border: 3px solid var(--secandaycolor);
+    color: var(--secandaycolor);
+    font-weight: 800;
+}
+
+/*header end*/
+
+/*service start*/
+#service {
+    padding: 1rem 0;
+    padding-bottom: 6rem;
+}
+
+#service .container .content-text {
+    margin-top: 4rem;
+}
+
+#service .container h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--secandaycolor);
+    text-align: center;
+}
+
+#service .container hr {
+    width: 200px;
+    height: 3px;
+    background-color: #385f96;
+    border: none;
+    margin: 2px auto 0;
+}
+
+
+#service .container .content-text,
+#portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+#service .container .content-text h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#service .container .content-text .item {
+    padding: 1rem ;
+    margin: 20px;
+    background-color: #385f96;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+#service .container .content-text .item:hover {
+    transform: scale(1.04);
+    background-color: transparent;
+    color: var(--secandaycolor);
+    border: 1px solid var(--secandaycolor);
+}
+/*service end*/
+
+/*about start*/
+
+#about {
+    padding: 3rem 0;
+    background-color: #385f96;
+}
+
+#about img {
+    width: 48rem;
+    transition: 0.4s;
+}
+
+#about img:hover {
+    transform: scale(1.08);
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+#about .container .content-text {
+    padding: 6rem 2rem 0;   
+}
+
+#about .container .content-text h2 {
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#about .container .content-text p {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+#about .container .content-text .btn {
+    padding: 15px 20px;
+    background-color:#fff;
+    color: var(--secandaycolor);
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#about .container .content-text .btn:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.199);
+    transform: scale(1.04);
+}
+
+/*about end*/
+
+/*portfolio start*/
+
+#portfolio {
+    padding: 6rem 0;
+    max-width: 1600px;
+    margin: auto;
+}
+#portfolio .title {
+    padding-bottom: 40px;
+}
+#portfolio .title h2 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--secandaycolor);
+}
+
+#portfolio .title hr {
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: #385f96;
+    margin: 3px auto 0;
+}
+
+#portfolio .container .item img {
+    width: 400px;
+}
+
+
+
+#portfolio .container .item {
+    padding: 1rem ;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #fff;
+    box-shadow: 10px 10px 10px #0000002c;
+    transition: 0.3s;
+   
+}
+#portfolio .container .item .p1 {
+    color: #385f96;
+    padding-bottom: 6px;
+}
+
+#portfolio .container .item .p2 {
+    color: #000;
+}
+
+#portfolio .container .item:hover {
+    transform: scale(1.04);
+    box-shadow: 10px 10px 10px #00000052;
+}
+/*portfolio end*/
+
+/*contact start*/
+#contact {
+    background-color: var(--secandaycolor);
+}
+#contact img {
+    width: 800px;
+    
+}
+
+#contact .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .container .row .content {
+    padding-top: 10rem;
+}
+
+#contact .container .row .content h4 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+#contact .container .row .content input, #contact .row textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+
+}
+
+#contact .container .row .content .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#contact .container .row .content .btn:hover  {
+    background-color: #fff;
+    border: none;
+    box-shadow: 10px 10px 10px #00000011;
+}
+/*contact end*/
+
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/*TABLET RESPONSIVE*/
+@media  (max-width: 1042x) {
+
+    body {
+        display: none;
+    }
+
+
+    .header-content .container img,
+    #about img,
+    #contact img {
+        width: 34rem;
+    }
+
+
+    #service {
+        padding-bottom: 6rem;
+    }
+
+    #about .container .content-text {
+        padding: 6px 2rem 0;   
+    }
+
+    #about .container .content-text h2 {
+        font-size: 50px;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
+    #about .container .content-text p {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding-bottom: 40px;
+    }
+
+    #portfolio .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        
+    }
+
+    #contact .container .row .content {
+        padding-top: 4rem;
+    } 
+}
+
+    
+
+@media (max-width: 950px) {
+
+    header .navbar nav {
+        display: block;
+        text-align: center;  
+          
+    }
+
+    header .navbar nav ul a {
+        display: block;
+        font-size: 18px;
+        padding-top: 10px;
+         
+     }
+
+     .header-content .container {
+        display: block;
+        text-align: center;
+     }
+
+     .header-content .content-text {
+        padding-bottom: 50px;
+    }
+
+
+    .header-content .container img{
+        width: 20rem;
+    }
+
+    .header-content .container h1,
+    #about .container  h2,
+    #service .container  h2{
+        font-size: 40px;
+    }
+
+    .header-content .container p {
+        font-size: 16px;
+    }
+
+    #service .container h2,
+    #about .container .content-text h2  {
+        font-size: 50px;
+    }
+
+    #service .container hr {
+        width: 180px;
+    }
+
+    #service .container .content-text h4 {
+        font-size: 20px;
+    }
+
+    #service .container .content-text p {
+        font-size: 13px;
+    }
+
+    #about .container {
+        display: block;
+        text-align: center;
+    }
+
+    #about img {
+        width: 20rem;
+        padding-top: 23px;
+    }
+
+    #about .container .content-text p {
+        font-size: 17px;
+    }
+
+    #portfolio .container .item img {
+        width: 200px;
+    }
+
+    #contact .container .row {
+        display: block;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #contact img {
+        display: none;
+        
+    }
+
+    
+    #contact .container .row .content input {
+        padding: 6px;
+    }
+
+    #contact .row textarea {
+        padding: 1px;
+    }
+
+    #contact .container .row .content .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+
+    
+    }
+
+    @media (max-width: 550px) {
+        
+        header .navbar nav {
+            display: block;
+            text-align: center; 
+            
+              
+        }
+
+       
+
+        header .navbar nav ul a {
+           display: block;
+           font-size: 12px;
+           padding-top: 10px;
+            
+        }
+
+        
+
+        #home #logo {
+            font-size: 17px;
+            
+        }
+
+        .header-content .container,
+        #about .container {
+            display: block;
+            text-align: center;
+            
+        }
+
+        .header-content .container img,
+    #about img {
+        width: 20rem;
+    }
+
+    .header-content .content-text {
+        padding-bottom: 30px;
+    }
+
+    .header-content .content-text h1 {
+        color: var(--secandaycolor);
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .header-content .content-text p {
+        font-size: 15px;
+        padding-bottom: 6px;
+    }
+
+    .header-content .container .social a i {
+        font-size: 10px;
+        padding: 10px;    
+    }
+    .header-content .content-text .btn {
+        padding: 12px 16px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        
+    }
+
+    #service .container .content-text h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #service .container .content-text p {
+        font-size: 14px;
+    }
+
+    #about {
+        padding: 1rem 0;
+    }
+    #about .container .content-text h2 {
+        font-size: 40px;
+    }
+
+    #about .container .content-text p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    #about .container .content-text .btn {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    #about img {
+        width: 20rem;
+        padding-top: 20px;
+    }
+
+    #portfolio .container {
+        display: block;
+    }
+
+    #contact .container .row {
+        display: block;
+        text-align: center;
+    }
+
+    #contact img {
+        display: none;
+        
+    }
+
+    
+    #contact .container .row .content input {
+        padding: 6px;
+    }
+
+    #contact .row textarea {
+        padding: 1px;
+    }
+
+    #contact .container .row .content .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+
+    #footer p {
+        font-size: 15px;
+    }
+    }
+
+    @media (max-width: 450px) {
+
+        #service .container .content-text {
+            display: block;
+        }
+
+        #service .container .content-text h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #service .container .content-text p {
+            font-size: 11px;
+        }
+
+        #portfolio .container .item img {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+        .header-content .container img {
+            width: 10rem;
+        }
+
+
+
+        #service .container .content-text {
+            display: block;
+            
+        }
+
+        #service .container h2 {
+            padding-top: 20px;
+        }
+
+        #service .container .content-text h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            
+        }
+
+        #service .container .content-text p {
+            font-size: 11px;
+        }
+
+        #portfolio .container .item img {
+            width: 200px;
+        }
+    }
+
+
+   
